@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--main css-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--default color skin-->
+    <link rel="stylesheet" type="text/css" href="css/skins/color-1.css">
+    <title>Home</title>
+
+    <style>
+        body{
+            font-size: 16px;
+            line-height: 1.5;
+            overflow-x: hidden;
+            background-color: var(--bg-black-50);
+        }
+    </style>
+</head>
+<body>
+    
+    <!--header start-->
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="logo"> 
+                    <a href="index.html">Kripa</a>
+                </div>
+                <div class="hamburger-btn outer-shadow hover-in-shadow" id="maal">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--header ends-->
+
+    <!--navigation starts-->
+    <nav class="nav-menu">
+        <div id="closeout" class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
+        <div class="nav-menu-inner">
+            <ul>
+                <li><a href="#home" class="link-item inner-shadow active">Home</a></li>
+                <li><a href="./blog/blog.html" class="link-item outer-shadow hover-in-shadow">Blog</a></li>
+                <li><a href="./resume/resume.html" class="link-item outer-shadow hover-in-shadow">About</a></li>
+                <li><a href="./resume/resume.html" class="link-item outer-shadow hover-in-shadow">Resume</a></li>
+                <li><a href="./research/research.html" class="link-item outer-shadow hover-in-shadow">Research</a>
+                </li>
+                <li><a href="./contact/contact.html" class="link-item outer-shadow hover-in-shadow">Contact</a></li>
+            </ul>
+        </div>
+        <p class="copyright-text">&copy; Rubi</p>
+    </nav>
+    <!--navigation ends-->
+
+   
+    <!--home section starts-->
+    <section class="home-section section">
+        <!--effect wrap starts-->
+            <div class="effect-wrap">
+                <div class="effect effect-1">
+                </div>
+                <div class="effect effect-2">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                    <div></div><div></div><div></div><div></div><div></div><div></div>
+                    <div></div><div></div><div></div><div></div><div></div><div></div>
+                    <div></div><div></div><div></div><div></div><div></div><div></div>
+                    <div></div><div></div><div></div>
+                </div>
+                <div class="effect effect-3"></div>
+                <div class="effect effect-4"></div>
+                <div class="effect effect-5">
+                    <div></div><div></div><div></div><div></div><div></div><div></div>
+                    <div></div><div></div><div></div><div></div>
+                </div>
+            </div>
+
+        <!--effect wrap ends-->
+        <div class="container">
+            <div class="row full-screen aligns-items-center">
+            <div class="home-text">
+                <p>Hello</p>
+                <h2>I'm Kripa</h2>
+                <h1>Web Designer & Student</h1>
+                <a href="./resume/resume.html" class="btn-1 outer-shadow hover-in-shadow">More About Me</a>
+            </div>
+            <div class="home-img">
+                <div class="img-box">
+                    <img src="../office/image/kripa.jpg" class="outer-shadow" alt="Kripa">
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!--home section ends-->
+
+    <script>
+        document.getElementById('maal').addEventListener('click', function(){
+            document.getElementsByClassName('nav-menu')[0].classList.toggle('show')
+        })  
+        document.getElementById('closeout').addEventListener('click', function(){
+            document.getElementsByClassName('nav-menu')[0].classList.toggle('show')
+        })
+    </script>
+
+</body>
+</html>
